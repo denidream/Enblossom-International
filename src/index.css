@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-serif-jp: 'Noto Serif JP', serif;
+    --font-sans-jp: 'Noto Sans JP', sans-serif;
+    --font-cinzel: 'Cinzel', serif;
+    --font-script: 'Cormorant Garamond', Georgia, serif;
+  }
+
+  body {
+    font-family: var(--font-sans-jp);
+    color: #2b332e;
+    background-color: #faf8f2;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-serif-jp {
+    font-family: var(--font-serif-jp);
+  }
+
+  .font-cinzel {
+    font-family: var(--font-cinzel);
+  }
+
+  .font-script {
+    font-family: var(--font-script);
+  }
+}
+
+/* Metallic gold gradients */
+.text-gold-metallic {
+  background: linear-gradient(135deg, #dfba73 0%, #fae59e 25%, #c89e47 50%, #f6df94 75%, #aa771c 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-light {
+  background: linear-gradient(135deg, #eed08d 0%, #fff1c0 50%, #d8ac54 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.bg-gold-gradient {
+  background: linear-gradient(135deg, #dfba73 0%, #fae59e 35%, #c89e47 70%, #d8ac54 100%);
+}
+
+.bg-gold-btn {
+  background: linear-gradient(135deg, #e3c078 0%, #f7e6a6 50%, #cf9e3f 100%);
+  box-shadow: 0 4px 14px rgba(184, 134, 45, 0.35);
+  transition: all 0.25s ease;
+}
+
+.bg-gold-btn:hover {
+  background: linear-gradient(135deg, #edd08e 0%, #fff1b8 50%, #dca849 100%);
+  box-shadow: 0 6px 20px rgba(184, 134, 45, 0.45);
+  transform: translateY(-1px);
+}
+
+.border-gold-subtle {
+  border-color: rgba(200, 158, 71, 0.35);
+}
+
+/* Subtle decorative Japanese lotus watermark */
+.bg-lotus-pattern {
+  background-image: radial-gradient(rgba(180, 142, 63, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
